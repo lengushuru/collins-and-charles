@@ -9,10 +9,42 @@
         <p id = "description" >thank for your response</p>
     </header>
     <form id = "survey-form" action="submit">
-        <input id = "name" type="text" required>
-        <input id = "email" type = "email"required>
-        <input id  = "number"type="number">
         
+        <div>
+            <label id="name-label"for="name">your name</label>
+            <input id = "name" type="text" placeholder="enter your name" required>
+        </div>
+        <div>
+            <label id="email-label"for="email">your email</label>
+            <input id = "email" type = "email" placeholder="enter your email" required>
+        </div>
+        <div>
+            <label id="number-label"for="name">your age</label>
+            <input id  = "number"type="number" min="18" max="100" placeholder="enter your age" >
+        </div>
+        <select id="dropdown" name="region" >
+            <option value="001">Nairobi</option>
+            <option value="002">Kiambu</option>
+        </select>
+        <div>
+            <fieldset>
+                <input value="1" name="iebc" id="name1" type="radio"checked> <label for="name1">senator</label>
+                <input value="2" name="iebc" id="name2" type="radio"><label for="name2">governor</label>
+                <input value="3" name="iebc" id="name3" type="radio"><label for="name3">mca</label>
+        </fieldset>
+            
+        </div> 
+        <div>
+            <input id="option1" value="1" type="checkbox"> <label for="option1">candidate1</label>
+            <input id="option2" value="2" type="checkbox"><label for="option2">candidate2</label>
+            <input id="option3" value="3" type="checkbox"><label for="option3">candidate3</label>
+        </div>
+        <div>
+            <p>do you anything else to tell us</p>
+    
+                <textarea name="additional comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button id="submit" type="submit">submit</button>
     </form>   
 </body>
 </html>
