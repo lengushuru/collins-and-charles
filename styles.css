@@ -1,5 +1,109 @@
-body{
-    background-color: rgb(176, 109, 238);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DEE2F0;
+}
+
+.form_body {
+    width: 498px;
+    height: 774px;
+    background: #0A173A;
+    border-radius: 25px;
+}
+
+.title {
+    margin-top: 56px;
     text-align: center;
-    padding: 20px;
+}
+
+.title h1 {
+    height: 39px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    color: #F5CECE
+}
+
+.title p {
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F5CECE;
+    margin-top: 13px;
+    margin-bottom: 42px;
+}
+form{
+    padding-left: 24px;
+    width: auto;
+}
+
+label {
+    height: 35px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F5CECE;
+}
+.name,.email,.age
+{
+    width: 300px;
+    height: 39px;
+    background: #D9D9D9;
+    border-radius: 15px;
+    margin-bottom: 31px;
+}
+.name {
+  margin-left: 17;
+}
+.email {
+  margin-left: 17;
+}
+.age {
+   margin-left: 31;
+}
+
+.rad_label {
+    margin-right: 17px;
+}
+
+.radio1 {
+    margin-right: 7px;
+}
+
+.check {
+    margin-top: 48px;
+    margin-right: 7px;
+
+}
+
+.check_label {
+    margin-right: 17px;
+}
+
+.anything {
+    color: #F5CECE;
+    margin: 20px 0;
+}
+
+.submit {
+    color: #201b36;
+    padding: 2px 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #F5CECE;
 }

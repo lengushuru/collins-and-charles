@@ -5,7 +5,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <main>
+        <section class="form_body">
+         <div class="title">
+            <h1 id="title">Captain survey-form</h1>
+            <p id = 'description'>thank for your response</p>
+         </div>
+         <form id ="survey-form"action="post">
+            <label for="name" id="name-label">Name:
+                <input type="text" id="name" required placeholder=" enter your name" class="name">
+            </label><br>
+            <label for="email" id="email-label">Email:
+                <input type="email" id="email" required placeholder=" enter your email" class="email">
+            </label><br>
+            <label for="number" id="number-label">Age:
+                <input type="number" min=10 max = 99 id="number" placeholder=" enter your age" class="age">
+            </label><br>
+            <select id="dropdown" name="region" >
+                <option value="00">Select</option>
+                <option value="001">Nairobi</option>
+                <option value="002">Kiambu</option>
+            </select><br>
+            <input value="1" name="iebc" id="name1" class="radio1" type="radio"checked> <label class="rad_label" for="name1">SENATOR</label>
+            <input value="2" name="iebc" id="name2" class="radio1" type="radio"><label class="rad_label" for="name2">GOVERNOR</label>
+            <input value="3" name="iebc" id="name3" class="radio1" type="radio"><label class="rad_label" for="name3">MCA</label><br>
+
+            <input value="1" name="iebc1"id="option1" class="radio" type="checkbox"checked> <label class = "check_label" for="option1">candidate1</label>
+            <input value="1" name="iebc1"id="option2" class="radio" type="checkbox"><label class = "check_label" for="option2">candidate2</label>
+            <input value="1" name="iebc1"id="option3" class="radio" type="checkbox"><label class = "check_label" for="option3">candidate3</label><br>
+            <p class="anything">do you have anything else to tell us</p>
+            <textarea name="texarea" id="texarea" cols="30" rows="10"></textarea><br>
+            <button type="submit" id = "submit"class="submit">submit</button>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
+    <!-- <header class="header">
         <h1 id = "title">presidential poll survey</h1>
         <p id = "description" >thank for your response</p>
     </header>
@@ -46,6 +82,4 @@
                 <textarea name="additional comments" id="comments" cols="30" rows="10"></textarea>
         </div>
         <button id="submit" type="submit">submit</button>
-    </form>   
-</body>
-</html>
+    </form>    -->
